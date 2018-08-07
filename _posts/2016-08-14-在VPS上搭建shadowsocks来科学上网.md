@@ -46,6 +46,7 @@ tags: [shadowsocks]
 提示:
 - 贴一个测速地址，请根据测速结果选择**最佳带宽和延迟较低的机房**。 [Digitalocean服务器测速-新加坡节点](http://speedtest-sgp1.digitalocean.com/)
 - 由于服务器在海外，地理位置原因导致延迟高是无法避免的，请根据测速情况选择合适的机房
+- 此外，创建服务器时可以添加SSH密钥，配好公钥后就可以免密登录了
 
 ## ShadowSocks
 
@@ -77,7 +78,7 @@ tags: [shadowsocks]
 sudo apt-get update
 sudo apt-get install python-pip
 # 询问是否Continue，输入y确认
-sudo pip install shadowsocks
+sudo pip install git+https://github.com/shadowsocks/shadowsocks.git@master
 ```
 
 ### 创建配置文件
